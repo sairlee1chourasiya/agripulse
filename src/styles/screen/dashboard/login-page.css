@@ -1,0 +1,148 @@
+.login-container {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Dark overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.admin-text {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  z-index: 2;
+}
+
+.login-card {
+  position: relative;
+  z-index: 2;
+  width: 420px;
+  background: #f5f5f5;
+  padding: 40px 35px;
+  border-radius: 20px;
+  margin-right: 80px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1b4332;
+  margin: 0;
+}
+
+.logo-subtitle {
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.welcome-text {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.login-title {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+.input-group {
+  margin-bottom: 18px;
+  
+  
+}
+
+.input-group label {
+  font-size: 13px;
+  color: #555;
+  display: block;
+  margin-bottom: 6px;
+}
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+
+  background-color: #ffffff;  
+  color: #000000;            
+}
+
+
+.input-group input:focus {
+  border-color: #2d6a4f;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: black;
+}
+
+.forgot-password {
+  color: #2d6a4f;
+  cursor: pointer;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1b4332;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 13px;
+  z-index: 2;
+}

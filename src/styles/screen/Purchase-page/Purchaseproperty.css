@@ -1,0 +1,337 @@
+
+
+.page{
+display:flex;
+min-height:100vh;
+background:#f5f5f5;
+font-family:Arial, Helvetica, sans-serif;
+height: 1200px;
+}
+
+
+
+.sidebar{
+width:260px;
+background:#f2f2f2;
+padding:20px;
+display:flex;
+flex-direction:column;
+height: 1000px;
+position: sticky;
+}
+
+
+
+.sidebar img{
+width:200px;
+margin-top:20px;
+}
+
+
+
+.search-box{
+display:flex;
+align-items:center;
+background:#e6e6e6;
+border-radius:25px;
+padding:8px 12px;
+gap:8px;
+margin-bottom:20px;
+}
+
+.search-box img{
+width:16px;
+}
+
+.search-box input{
+border:none;
+outline:none;
+background:transparent;
+width:100%;
+font-size:14px;
+}
+
+
+
+.menu-title{
+font-size:12px;
+color:#777;
+margin:15px 0 8px;
+letter-spacing:1px;
+}
+
+.menu{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.menu li{
+display:flex;
+align-items:center;
+gap:10px;
+padding:12px 15px;
+border-radius:25px;
+margin-bottom:6px;
+color:#555;
+cursor:pointer;
+font-size:15px;
+}
+
+.menu li:hover{
+background:#e5e5e5;
+}
+
+.menu li.active{
+background:#39a655;
+color:white;
+}
+
+
+
+.discount-img{
+margin-top:30px;
+border-radius:16px;
+padding:20px;
+height:160px;
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.discount-img h3{
+font-size:22px;
+margin-bottom:10px;
+}
+
+.discount-img span{
+color:#39a655;
+}
+
+.discount-img p{
+font-size:12px;
+width:85%;
+}
+
+
+
+.profile-img{
+display:flex;
+align-items:center;
+gap:10px;
+margin-top:20px;
+}
+
+.profile-img img{
+width:40px;
+height:40px;
+border-radius:50%;
+object-fit:cover;
+display: flex;
+}
+
+.profile-img h4{
+font-size:14px;
+margin:0;
+display: flex;
+}
+
+.profile-img h5{
+font-size:12px;
+color:#777;
+display: flex;
+margin:0;
+}
+
+
+
+.main{
+flex:1;
+padding:30px;
+display:flex;
+flex-direction:column;
+height: 1000px;
+}
+
+
+
+.topbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.hi-btn{
+background:#39a655;
+color:white;
+border:none;
+padding:8px 18px;
+border-radius:8px;
+font-size:13px;
+}
+
+.notification{
+width:40px;
+height:40px;
+background:#39a655;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.notification img{
+width:50px;
+}
+
+
+
+.page-title{
+font-size:26px;
+margin-bottom:20px;
+}
+
+
+
+.purchase-card{
+display:flex;
+gap:30px;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 2px 8px rgba(0,0,0,0.05);
+align-items:center;
+}
+
+
+
+.property-img img{
+width:320px;
+height:200px;
+border-radius:10px;
+object-fit:cover;
+}
+
+
+
+.property-details{
+flex:1;
+}
+
+.property-details h1{
+font-size:28px;
+margin-bottom:10px;
+}
+
+.price{
+font-size:18px;
+margin-bottom:5px;
+}
+
+.size{
+font-size:14px;
+color:#777;
+margin-bottom:15px;
+}
+
+
+.quantity{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.quantity button{
+width:35px;
+height:35px;
+border:1px solid #ddd;
+background:white;
+border-radius:6px;
+cursor:pointer;
+font-size:18px;
+}
+
+.quantity span{
+width:40px;
+text-align:center;
+font-size:16px;
+}
+
+.plus{
+border:1px solid #39a655;
+color:#39a655;
+}
+
+/* ORDER SUMMARY */
+
+.order-summary{
+width:260px;
+background:#f8f8f8;
+padding:20px;
+border-radius:10px;
+border:1px solid #eee;
+}
+
+.order-summary h3{
+margin-bottom:15px;
+}
+
+.summary-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:12px;
+font-size:14px;
+}
+
+.purchase-btn{
+width:100%;
+margin-top:15px;
+padding:10px;
+background:#10b010;
+border:none;
+border-radius:8px;
+color:white;
+font-size:15px;
+cursor:pointer;
+}
+
+/* FOOTER */
+
+.footer{
+margin-top:680px;
+padding:40px 0 10px 0;
+text-align:center;
+background: transparent;
+}
+
+.social-icons{
+display:flex;
+justify-content:center;
+gap:22px;
+flex-wrap:wrap;
+margin-bottom:10px;
+color: black;
+}
+
+.social-icons span{
+display:flex;
+align-items:center;
+gap:6px;
+cursor:pointer;
+font-size:14px;
+color: black;
+}
+
+.social-icons span:hover{
+color:#39a655;
+}
+
+.copyright{
+font-size:13px;
+color:black;
+width: 980px;
+position: inherit;
+}

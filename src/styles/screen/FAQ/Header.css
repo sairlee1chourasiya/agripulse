@@ -1,0 +1,30 @@
+.topbar{
+display:flex;
+
+
+margin-bottom:50px;
+height: 760px;
+}
+
+.hi-btn{
+background:#39a655;
+color:white;
+border:none;
+padding:8px 18px;
+border-radius:8px;
+font-size:13px;
+}
+
+.notification{
+width:40px;
+height:40px;
+background:#39a655;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.notification img{
+width:50px;
+}
