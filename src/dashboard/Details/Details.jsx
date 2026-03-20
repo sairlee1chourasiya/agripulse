@@ -37,7 +37,7 @@ import Footer from '../FAQ/Footer'
 const Details = () => {
   return (
     <section className='details'>
-     <div className="sidediv"><Sidebar/> </div>
+    <Sidebar/>
         
 
         

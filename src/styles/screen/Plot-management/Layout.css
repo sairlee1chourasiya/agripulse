@@ -167,9 +167,9 @@ display: flex;
 .details{
   margin-top:20px;
   display:flex;
-  flex-wrap:wrap;
+  /* flex-wrap:wrap; */
   gap:15px;
-  align-items:center;
+  /* align-items:center; */
 }
 .title h3{
   font-size:18px;

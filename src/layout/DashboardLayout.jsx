@@ -1,15 +1,14 @@
-import React from 'react'
-import Sidebar from '../customer/sidebar'
+import React from "react";
+import Sidebar from "../customer/sidebar";
 
-const DashboardLayout = ({screen}) => {
+const DashboardLayout = ({ screen }) => {
   return (
-    <div style={{display:'flex'}}><Sidebar/>
-    
-    {screen}
-    
-    
-    </div>
-  )
-}
+    <div style={{ display: "flex", position: "relative" }}>
+      <Sidebar />
 
-export default DashboardLayout
+      {screen}
+    </div>
+  );
+};
+
+export default DashboardLayout;

@@ -5,15 +5,16 @@
     border-right:1px solid #e5e5e5;
     padding:20px;
     box-sizing:border-box;
-   
-    
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 
 
 .sidebar img{
     width:150px;
-    margin-bottom:20px;
+    /* margin-bottom:20px; */
 }
 
 
