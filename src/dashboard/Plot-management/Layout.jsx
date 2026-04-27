@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/screen/Plot-management/Layout.css";
 
-import Sidebar1 from "./Sidebar1";
+
 import Topbar from "../../dashboard1/layout/topbar";
 
 import mapImage from "../../assets/dashboard/plot-management/map.png";
@@ -19,7 +19,7 @@ const Layout = () => {
     <div className="dashboard-layout">
 
       
-      <Sidebar1 />
+  
 
       
       <div className="main-content">

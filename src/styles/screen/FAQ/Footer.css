@@ -1,54 +1,46 @@
-
-
 .footer {
   width: 100%;
+  padding: 25px 15px;
   text-align: center;
-  background: transparent;
-  padding: 15px 10px;
+  background: #fff;
+  margin-top: 40px;
 
-  margin-top: auto; 
+  position:relative !important;
+  
+  bottom:auto !important;
+  left:auto !important;
+  right:auto !important;
+   background:#ffffff !important;
+  background-color:#ffffff !important;
+
+
+   
 }
-
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  gap: 18px;
 }
-
 
 .social-icons span {
   display: flex;
   align-items: center;
   gap: 6px;
-  cursor: pointer;
   font-size: 14px;
   color: #333;
+  cursor: pointer;
   transition: 0.3s;
 }
-
 
 .social-icons span:hover {
   color: #39a655;
 }
 
-
 .copyright {
+  margin-top: 18px;
   font-size: 13px;
-  color: #555;
-  text-align: center;
-  width: 100%;
-}
-
-
-@media (max-width: 600px) {
-  .social-icons {
-    gap: 12px;
-  }
-
-  .social-icons span {
-    font-size: 12px;
-  }
+  color: #666;
 }

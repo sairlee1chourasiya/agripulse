@@ -2,6 +2,8 @@
   background-color: #4d7c0f; 
   padding: 80px 0;
   border-top-right-radius: 80px;
+  display: flex;
+  margin-left: -20px;
 }
 
 .quality-container {

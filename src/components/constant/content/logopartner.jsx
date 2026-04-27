@@ -6,22 +6,25 @@ import logo3 from "../../../../src/assets/website/logo3.png";
 import logo4 from "../../../../src/assets/website/logo4.png";
 import logo5 from "../../../../src/assets/website/logo5.png";
 import logo6 from "../../../../src/assets/website/logo6.png";
+
 import "../../screen/logopartner.css";
-
-
-
 
 const Logopartner = () => {
   return (
     <section className="logo-partner">
-      <h3>Trusted by 10,000+ companies around the world</h3>
+      <div className="logo-wrapper">
 
-      <div className="logo-container">
-        <img src={logo1}  />
-        <img src={logo2}  />
-        <img src={logo3}  />
-        <img src={logo4}  />
-        <img src={logo5}  />
+        <h3>Trusted by 10,000+ companies around the world</h3>
+
+        <div className="logo-container">
+          <img src={logo1} alt="logo1" />
+          <img src={logo2} alt="logo2" />
+          <img src={logo3} alt="logo3" />
+          <img src={logo4} alt="logo4" />
+          <img src={logo5} alt="logo5" />
+          <img src={logo6} alt="logo6" />
+        </div>
+
       </div>
     </section>
   );

@@ -4,9 +4,13 @@
 }
 
 .buyer-container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: auto;
+}
+
+.buyer-header{
+  margin-left: 50px;
 }
 
 .buyer-header h2 {
@@ -26,8 +30,8 @@
 /* Cards */
 .buyer-cards {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 300px;
+  
 }
 
 .buyer-card {
@@ -38,20 +42,27 @@
   flex: 1;
   min-width: 450px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-left: 60px;
+  gap: 30px;
 }
 
 .buyer-card img {
-  width: 300px;
+  width: 200px;
   height: 100%;
   object-fit: cover;
+ 
 }
 
 .buyer-content {
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding:30px;
+
+  
+ 
+ 
+
+ 
 }
+
 
 .buyer-content p {
   color: #666;
@@ -70,9 +81,10 @@
   font-size: 14px;
 }
 
-/* Dots */
+
 .buyer-dots {
   margin-top: 40px;
+  margin-left: 60px;
 }
 
 .dot {

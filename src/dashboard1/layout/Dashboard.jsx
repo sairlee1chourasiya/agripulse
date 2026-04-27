@@ -1,12 +1,10 @@
 import React from "react";
-import Sidebar from "../../customer/sidebar";
+
 
 
 import logo from "../../assets/dashboard/dashboard1/logo.png";
 import search from "../../assets/dashboard/dashboard1/search.png";
-import notification from "../../assets/dashboard/dashboard1/notification.png";
-import message from "../../assets/dashboard/dashboard1/message.png";
-import rajatimg from "../../assets/dashboard/dashboard1/rajatimg.png";
+
 import totalproperty from "../../assets/dashboard/dashboard1/total-property.png";
 import sales1 from "../../assets/dashboard/dashboard1/sales1.png";
 import sales2 from "../../assets/dashboard/dashboard1/sales2.png";
@@ -17,52 +15,32 @@ import productimg from "../../assets/dashboard/dashboard1/product-container.png"
 import worldmap from "../../assets/dashboard/dashboard1/world-map.png";
 import sideimg from "../../assets/dashboard/dashboard1/sideimg.png";
 import propertyimg from "../../assets/dashboard/dashboard1/propertyimg.png";
+import { useNavigate } from "react-router-dom";
 
 
 import "../../styles/screen/Dashboard1/dashboard.css";
 
+
 const Dashboard = () => {
+  const navigate = useNavigate();
   return (
+    <div className="one">
     <div className="dashboard-container">
+      
 
       
-      <div className="dashboard-navbar">
-
-        <div className="search-box">
-          <img src={search}  />
-          <input type="text" placeholder="Search Here" />
-        </div>
-
-        <div className="portion-right">
-            <div className="nav-icon">
-                <img src={notification}/>
-            </div>
-            <div className="nav-icon">
-                <img src={message}/>
-            </div>
-          
-          
-
-          <div className="profile">
-            <img src={rajatimg} />
-            <div>
-              <h4>hi, Rajat</h4>
-              <p>Admin</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
+     
       <section>
         <div  className="top-div">
-          <div> <h2>Dashboard</h2>
+          <div> <h2   onClick={() => navigate("/mainpage")}>Dashboard</h2>
           <p>Welcome to Agripulse Property Admin </p></div>
           
-          <div className="refresh-btn">
-            <button>Refresh</button></div>
+          
           
 
         </div>
+        <div className="refresh-btn">
+            <button>Refresh</button></div>
         <div className="second-div">
           <div className="total-properties">
             <img src={totalproperty} />
@@ -79,7 +57,7 @@ const Dashboard = () => {
         </div>
 
 
-        {/*middle div*/}
+      
 
         <div className="middle-div">
           <div className="overview">
@@ -96,7 +74,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/*last div*/}
+      
        <div className="last-div">
         <div className="world-map">
           <img src={worldmap}  />
@@ -119,7 +97,7 @@ const Dashboard = () => {
           <p>Friendly service Josh, Lunar and everyone at Just Property in Hastings deserved a big Thank You from us for moving us from Jakarta to Medan during the lockdown.</p>
         
         </div>
-        <button>Open Chat</button>
+        <button onClick={() => navigate("/chatsupport")}>Open Chat</button>
        </div>
 
        <div className="recent-property">
@@ -136,6 +114,7 @@ const Dashboard = () => {
 
 
       </section>
+      </div>
       </div>
   );
 };

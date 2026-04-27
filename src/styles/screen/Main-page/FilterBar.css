@@ -1,0 +1,88 @@
+
+.filter-container {
+  background: #f3f3f3;
+  border-radius: 8px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 400px;
+}
+
+
+.filter-container h2 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #222;
+  margin-left: 30px;
+  margin-top: -40px;
+}
+
+
+.row {
+  display: flex;
+  gap: 25px;
+  margin-left: 100px;
+  align-items: center;
+  flex-wrap: nowrap; 
+}
+
+
+input,
+select {
+  height: 48px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+  min-width: 120px;
+  transition: 0.2s;
+}
+
+
+input:focus,
+select:focus {
+  border-color: #3aa655;
+}
+
+
+.search-input {
+  flex: 2;
+}
+
+
+select {
+  flex: 1;
+}
+
+
+.area-input {
+  flex: 1;
+}
+
+
+.book-btn {
+  background: #3aa655;
+  color: #fff;
+  border: none;
+  padding: 0 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  height: 48px;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+
+.book-btn:hover {
+  background: #2f8f47;
+}
+
+
+
+  .book-btn {
+    width: 100%;
+  }

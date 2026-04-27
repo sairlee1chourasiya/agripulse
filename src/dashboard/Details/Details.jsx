@@ -1,5 +1,5 @@
 import React from 'react'
-import Sidebar from '../FAQ/Sidebar'
+
 import notification from "../../assets/dashboard/purchase-page/notification.png";
 import { AiOutlineHome } from "react-icons/ai";
 import { CiLocationOn } from "react-icons/ci";
@@ -26,40 +26,36 @@ import mashroombg from "../../assets/dashboard/details/mashroombg.png";
 import mashroom from "../../assets/dashboard/details/mashroom.png";
 import { IoLocation } from "react-icons/io5";
 import { MdBedroomChild } from "react-icons/md";
+
 import { GiBathtub } from "react-icons/gi";
 import { RiHome7Line } from "react-icons/ri";
 import { LuCircleParking } from "react-icons/lu";
 
 
 import Footer from '../FAQ/Footer'
+import LandDetails from './LandDetails';
 
 
 const Details = () => {
   return (
     <section className='details'>
-    <Sidebar/>
+    
         
 
         
             <div className="main-detailscontainer">
-              
-                <div className="header">
-                    <button>HI THERE</button>
-                    <div className="notifi">
-                    <img src={notification} /></div></div>
+                
+
+                   <div className="head">
+                            <button>HI, THERE</button>
+                            <div className="notifica">
+                              <img src={notification} />
+                            </div>
+                          </div>
+               
                <div className="container1">
-               <div className="container1a">
-                 <div className="headings">
-                    <AiOutlineHome />
-                    <p>Home</p><IoChevronForwardOutline /><p>List</p><IoChevronForwardOutline /><p>kesar-100M Details</p>
-                   
-                    
-
-
-
-
-
-                 </div>
+               <div className="container1a"><AiOutlineHome /><p style={{color:"green"}}>Home</p><IoChevronForwardOutline /><p style={{color:"green"}}>List</p><IoChevronForwardOutline /><p>kesar-100M Details</p>
+                 
                  <div className="kesar">
                     <p>Kesar-100M</p>
                     <button className='F'>FEATURED</button>
@@ -168,7 +164,7 @@ const Details = () => {
 
     </div>
 
-    {/* RIGHT SIDE MAP  upar import krna h  */}
+
     <div className="map-part">
       <img src={map} alt="map" />
     </div>
@@ -181,7 +177,7 @@ const Details = () => {
 
 
 
-{/*enquiry form*/}
+
 
 <div className="enquiry-form">
 <h2>Enquiry Form
@@ -215,7 +211,7 @@ const Details = () => {
 
 
 
-{/*description part */}
+
 
 
 
@@ -491,395 +487,17 @@ sollemnes in futurum.</p></div>
   </div>
 </div>
 
-<div className="similar-landdetails">
+     <LandDetails/>
+      <LandDetails/>
+       <LandDetails/>
+        <LandDetails/>
+    
 
-  <div className="part1">
-    <div className="imagepart">
-      <div className="img1">
-        <img src={mashroom} />
-      </div>
-      <div className="bgimg">
-        <div className="img2">
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-        </div>
-      </div>
 
-    </div>
 
-    <div className="content">
-      <div className="mashroom-header">
-      <h2>Mushroom 1000M</h2> 
-      <div className="bhopal">
-      <IoLocation /> 
-      <span>Bhopal</span></div>
-      </div>
 
-      <div className="overview-mashroom">
 
-        <h3>Overview</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-feugait nulla facilisi.</p>
-      </div>
 
-
-
-      {/*footer mashroom */}
-
-
-
-      <div className="mashroom-footer">
-        <div className="facility">
-         <MdBedroomChild />
-         <div className="facility1">
-          <span>Bedrooms</span>
-          <span>4</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <GiBathtub />
-         <div className="facility1">
-          <span>Bath</span>
-          <span>2</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <MdSquareFoot />
-         <div className="facility1">
-          <span>sqft</span>
-          <span>2200</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <RiHome7Line />
-         <div className="facility1">
-          <span>Type</span>
-          <span>Home</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <LuCircleParking />
-         <div className="facility1">
-          <span>Parking</span>
-          <span>yes</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <CiCalendarDate />
-         <div className="facility1">
-          <span>Build Year</span>
-          <span>2020</span>
-          </div> 
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-<div className="similar-landdetails">
-
-  <div className="part1">
-    <div className="imagepart">
-      <div className="img1">
-        <img src={mashroom} />
-      </div>
-      <div className="bgimg">
-        <div className="img2">
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-        </div>
-      </div>
-
-    </div>
-
-    <div className="content">
-      <div className="mashroom-header">
-      <h2>Mushroom 1000M</h2> 
-      <div className="bhopal">
-      <IoLocation /> 
-      <span>Bhopal</span></div>
-      </div>
-
-      <div className="overview-mashroom">
-
-        <h3>Overview</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-feugait nulla facilisi.</p>
-      </div>
-
-
-
-      {/*footer mashroom */}
-
-
-
-      <div className="mashroom-footer">
-        <div className="facility">
-         <MdBedroomChild />
-         <div className="facility1">
-          <span>Bedrooms</span>
-          <span>4</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <GiBathtub />
-         <div className="facility1">
-          <span>Bath</span>
-          <span>2</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <MdSquareFoot />
-         <div className="facility1">
-          <span>sqft</span>
-          <span>2200</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <RiHome7Line />
-         <div className="facility1">
-          <span>Type</span>
-          <span>Home</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <LuCircleParking />
-         <div className="facility1">
-          <span>Parking</span>
-          <span>yes</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <CiCalendarDate />
-         <div className="facility1">
-          <span>Build Year</span>
-          <span>2020</span>
-          </div> 
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-<div className="similar-landdetails">
-
-  <div className="part1">
-    <div className="imagepart">
-      <div className="img1">
-        <img src={mashroom} />
-      </div>
-      <div className="bgimg">
-        <div className="img2">
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-        </div>
-      </div>
-
-    </div>
-
-    <div className="content">
-      <div className="mashroom-header">
-      <h2>Mushroom 1000M</h2> 
-      <div className="bhopal">
-      <IoLocation /> 
-      <span>Bhopal</span></div>
-      </div>
-
-      <div className="overview-mashroom">
-
-        <h3>Overview</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-feugait nulla facilisi.</p>
-      </div>
-
-
-
-      {/*footer mashroom */}
-
-
-
-      <div className="mashroom-footer">
-        <div className="facility">
-         <MdBedroomChild />
-         <div className="facility1">
-          <span>Bedrooms</span>
-          <span>4</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <GiBathtub />
-         <div className="facility1">
-          <span>Bath</span>
-          <span>2</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <MdSquareFoot />
-         <div className="facility1">
-          <span>sqft</span>
-          <span>2200</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <RiHome7Line />
-         <div className="facility1">
-          <span>Type</span>
-          <span>Home</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <LuCircleParking />
-         <div className="facility1">
-          <span>Parking</span>
-          <span>yes</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <CiCalendarDate />
-         <div className="facility1">
-          <span>Build Year</span>
-          <span>2020</span>
-          </div> 
-
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-<div className="similar-landdetails">
-
-  <div className="part1">
-    <div className="imagepart">
-      <div className="img1">
-        <img src={mashroom} />
-      </div>
-      <div className="bgimg">
-        <div className="img2">
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-          <img src={mashroombg} />
-        </div>
-      </div>
-
-    </div>
-
-    <div className="content">
-      <div className="mashroom-header">
-      <h2>Mushroom 1000M</h2> 
-      <div className="bhopal">
-      <IoLocation /> 
-      <span>Bhopal</span></div>
-      </div>
-
-      <div className="overview-mashroom">
-
-        <h3>Overview</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
-feugait nulla facilisi.</p>
-      </div>
-
-
-
-      {/*footer mashroom */}
-
-
-
-      <div className="mashroom-footer">
-        <div className="facility">
-         <MdBedroomChild />
-         <div className="facility1">
-          <span>Bedrooms</span>
-          <span>4</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <GiBathtub />
-         <div className="facility1">
-          <span>Bath</span>
-          <span>2</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <MdSquareFoot />
-         <div className="facility1">
-          <span>sqft</span>
-          <span>2200</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <RiHome7Line />
-         <div className="facility1">
-          <span>Type</span>
-          <span>Home</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-         <LuCircleParking />
-         <div className="facility1">
-          <span>Parking</span>
-          <span>yes</span>
-          </div> 
-
-        </div>
-        <div className="facility">
-        <CiCalendarDate />
-         <div className="facility1">
-          <span>Build Year</span>
-          <span>2020</span>
-          </div> 
-
-        </div>
-
-      </div>
-      
-
-    </div>
-  </div>
-  
-</div>
-
-
-
-{/*original footer*/
-
-}
 <div className="footdiv"><Footer/></div>
 
 </div>

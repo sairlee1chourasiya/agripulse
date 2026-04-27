@@ -7,24 +7,25 @@ import { TiTickOutline } from "react-icons/ti";
 import { IoMdAlarm } from "react-icons/io";
 import { FaPaperclip } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
-
 import Footer from "../FAQ/Footer";
+
+
 import Header from "../FAQ/Header";
-import Sidebar from "../FAQ/Sidebar";
+
 
 import "../../styles/screen/Chat-support/Chatsupport.css";
+
 
 const Chatsupport = () => {
   return (
     <div className="main">
       
-      <Sidebar />
-       
+      
 
       <div className="page-content">
-        <div className="header">
+       
          <Header />
-        </div>
+        
 
         
 
@@ -32,7 +33,7 @@ const Chatsupport = () => {
 
         <div className="container">
 
-          {/* LEFT INBOX PANEL */}
+      
 
           <div className="inbox-panel">
 
@@ -90,8 +91,7 @@ const Chatsupport = () => {
           </div>
 
 
-          {/* CHAT PANEL */}
-
+          
           <div className="chat-panel">
 
             <div className="panel-header">
@@ -132,7 +132,7 @@ const Chatsupport = () => {
             </div>
 
 
-            {/* CHAT INPUT */}
+        
 
             <div className="chat-input-container">
 
@@ -145,7 +145,7 @@ const Chatsupport = () => {
               />
 
               <IoSend className="send-icon"/>
-              <Footer />
+              
 
             </div>
             
@@ -159,6 +159,9 @@ const Chatsupport = () => {
         
 
       </div>
+      <div className="footer">
+               <Footer/>
+              </div>
       
 
     </div>

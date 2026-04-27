@@ -1,0 +1,203 @@
+ 
+.main-content {
+  margin-left: 250px; 
+  padding: 20px;
+  background: #f4f5f7;
+  min-height: 100vh;
+}
+
+
+.vendor-container {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 1120px;
+  margin-left: 20px;
+}
+
+
+.vendor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.vendor-header h2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.vendor-header span {
+  color: #f39c12;
+}
+
+
+.vendor-search {
+  position: relative;
+  width: 250px;
+}
+
+.vendor-search input {
+  width: 100%;
+  padding: 10px 35px 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  background: #fafafa;
+}
+
+.vendor-search svg {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 14px;
+}
+
+
+.filter-card {
+  background: #fafafa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.filter-card h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.filter-grid label {
+  display: block;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.filter-grid select,
+.filter-grid input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  background: #fff;
+}
+
+
+.table-card {
+  margin-top: 20px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+thead {
+  background: #fafafa;
+}
+
+th {
+  padding: 15px;
+  text-align: left;
+  font-size: 14px;
+  color: #555;
+}
+
+td {
+  padding: 15px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+td img {
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+
+.status {
+  color: purple;
+  font-weight: 500;
+}
+
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon1 {
+  width: 32px;
+  height: 32px;
+  background: #f3e8ff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.icon svg {
+  font-size: 14px;
+  color: purple;
+}
+
+
+.table-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 5px;
+}
+
+
+.rows {
+  font-size: 14px;
+}
+
+.rows select {
+  margin-left: 10px;
+  padding: 5px 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+
+.pagination {
+  display: flex;
+  align-items: center;
+}
+
+.pagination button {
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 6px 10px;
+  margin: 0 3px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination .active {
+  background: purple;
+  color: white;
+  border: none;
+}

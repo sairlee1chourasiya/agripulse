@@ -13,7 +13,7 @@ FaYoutube,
 } from "react-icons/fa";
 import "../../styles/screen/FAQ/Footer.css";
 
-const Footer = () => {
+const Foooter = () => {
   return (
    <div className="footer">
    
@@ -27,12 +27,14 @@ const Footer = () => {
    <span><FaPinterestP/> Pinterest</span>
    <span><FaYelp/> Yelp</span>
    <span><FaYoutube/> Youtube</span>
-   
-   </div>
-   
    <p className="copyright">
    © Company - All rights reserved
    </p>
+   
+   
+   </div>
+   
+   
    
    </div>
    
@@ -48,4 +50,4 @@ const Footer = () => {
   
 
 
-export default Footer
+export default Foooter

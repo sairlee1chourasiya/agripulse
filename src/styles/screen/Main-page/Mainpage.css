@@ -1,0 +1,600 @@
+.first-infopart{
+  display:flex;
+ margin-left: 90px;
+  width: 1000px;
+
+  
+
+ height: 200px;
+ 
+}
+
+.first-infopart img{
+  width: 30px;
+  margin-right: 50px;
+  
+}
+
+.info{
+  display: flex;
+}
+
+.info img{
+  width: 20%;
+  height: 50px;
+}
+
+.info p{
+  font-size: 12px;
+  color: gray;
+}
+
+
+
+
+
+
+
+.card-container {
+
+   display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 🔥 wrap zaruri hai */
+  
+   max-width: 1200px;   /* 🔥 width control */
+  margin: 0;
+  
+   
+  
+
+}
+
+
+
+
+
+.main-content{
+ 
+ 
+  margin-left: 260px;              /* sidebar space */
+  padding: 20px;
+  width: calc(100% - 260px);
+
+  
+}
+
+.maincontainer{
+  margin-left: -35px;
+}
+
+
+
+
+/* IMAGE */
+.card-img {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+
+/* TOP TAG */
+.tag {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  background: #ef4444;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+
+/* WHITE BOX */
+.card-content {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  right: 25px;
+
+  background: #f3f4f6;
+  border-radius: 25px;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+
+/* TEXT */
+.text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+
+
+
+.text p {
+  margin: 8px 0 15px;
+  color: #555;
+  font-size: 15px;
+}
+
+
+
+/* BUTTON */
+.buy-btn {
+  background: #22c55e;
+  border: none; /* ❌ border hata diya */
+  padding: 10px 18px;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* HEART FIX (IMPORTANT) */
+.heart {
+  position: absolute;
+right: 10px;   /* 👈 thoda bahar niklega */
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 55px;
+  height: 55px;
+  background: #d1fae5;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #22c55e;
+  font-size: 20px;
+}
+card-container1 {
+  
+   display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 🔥 4 cards ek line me */
+  gap: 20px;
+  padding: 20px;
+
+
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* 🔥 image crop + fit */
+  border-radius: 20px;
+}
+.card-content {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+
+.card-container1 .card {
+  display: block;
+  align-items: center;
+  gap: 15px;
+  height: 110px;
+  padding: 10px;
+  background: #f3f4f6;
+  border-radius: 15px;
+  
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 cards ek row */
+  gap: 25px;
+}
+
+.card-container1 .card-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.card-container1 .card-content {
+  position: static;  /* 🔥 IMPORTANT */
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: -30px;
+  margin-top: -10px;
+}
+
+.card-container1 .text h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-container1 .text p {
+  font-size: 13px;
+  margin: 4px 0;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-content {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+
+.card-container1 .buy-btn {
+  padding: 6px 12px;
+  font-size: 12px;
+  border-radius: 8px;
+}
+
+
+
+.card-container1 .heart {
+  position: static;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+
+
+.card-container1 .tag {
+  display: none;
+}
+
+
+.card-container1 .heart{
+
+  margin-left:160px;
+  margin-top: -40px;
+}
+
+
+.a{
+
+  margin-left: 280px;
+  font-size: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.firm-land-section {
+  padding: 60px 100px;
+  background: #f9fafb;
+  
+}
+
+.firm-land-section .data-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 50px;
+}
+
+.firm-land-section .data {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.firm-land-section .data-img {
+  width: 70px;
+  height: 70px;
+  padding: 15px;
+  border: 2px solid #cfe8ef;
+  border-radius: 15px;
+  background: #f1f5f9;
+  object-fit: contain;
+}
+
+.firm-land-section .data-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0 5px;
+  color: #111;
+}
+
+.firm-land-section .data-type p {
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 230px;
+}
+
+/* ================= CONTAINER ================= */
+.customer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 30px 100px;
+  margin-left: -50px;
+}
+
+
+/* ================= CARD ================= */
+.Customer {
+  position: relative;
+  height: 320px;
+  width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  
+}
+* 🔥 FIRST ROW CENTER  */
+.Customer:nth-child(1) {
+  grid-column: 2 / 3;   /* center column */
+}
+
+.Customer:nth-child(2) {
+  grid-column: 3 / 4;
+}
+
+
+/* ================= IMAGE ================= */
+.customer-imge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ================= DARK OVERLAY ================= */
+.Customer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);  /* dark effect */
+}
+
+
+/* ================= TEXT CONTENT ================= */
+.property {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 2;
+  color: #fff;
+}
+
+
+/* SMALL TEXT */
+.property h3 {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0.8;
+}
+
+
+/* BIG TITLE */
+.property p {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+
+/* ================= BUTTON ================= */
+.more-details {
+  position: absolute;
+  margin-top: 180px;
+ 
+
+  background: transparent;
+  
+  padding: 8px 14px;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+
+
+
+.play{
+ 
+
+  
+ width: 35px;
+  height: 35px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+  
+
+  color: white;
+  font-size: 16px;
+  margin-left: 270px;
+  margin-top: 190px;
+
+  
+
+}
+
+hhh
+.filter-container {
+  padding: 30px;
+  background: #f5f5f5;
+  border-radius: 10px;
+  margin-left: 500px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+input,
+select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.book-btn {
+  background: green;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-section {
+  margin-top: 20px;
+}
+
+.slider {
+ 
+  margin-left: -100px;
+}
+
+.slider input {
+  width: 100%;
+  margin-top: 10px;
+}
+.abcd{
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+
+.goodhands-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px;
+  background: #f5f5f5;
+  width: 1200px;
+  height: 500px;
+  margin-left: 40px;
+  margin-bottom: 70px;
+}
+
+
+.left-section {
+  width: 45%;
+  margin-top: 30px;
+}
+
+.line {
+  width: 120px;
+  height: 4px;
+  background: green;
+  margin-bottom: 20px;
+}
+
+.left-section h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.left-section p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.learn-btn {
+  background: #3aa655;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+.right-section {
+  width: 50%;
+}
+
+.right-section img {
+  width: 550px;
+  border-top-left-radius:   50px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  height: 500px;
+}
+
+
+@media (max-width: 768px) {
+  .goodhands-container {
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+
+  .right-section {
+    margin-top: 30px;
+  }
+}
+
+.header{
+ margin-left: -10px;
+  width: 1100px;
+}
+.icon{
+
+  width: 50px;
+  background-color: #22c55e;
+  border-radius: 575px;
+  margin-right: 10px;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+

@@ -1,0 +1,148 @@
+.ld-wrapper {
+  width: 100%;
+  padding: 20px;
+  background: #f5f6f8;
+}
+
+.ld-card {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #eaeaea;
+  position: relative;
+}
+
+.ld-imgcol {
+  width: 240px;
+  flex-shrink: 0;
+}
+
+.ld-mainimg {
+  width: 100%;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.ld-thumbrow {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.ld-thumb {
+  width: 72px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.ld-thumb:hover {
+  opacity: 0.85;
+}
+
+.ld-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.ld-titleblock {
+  margin-bottom: 12px;
+}
+
+.ld-title {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #111;
+}
+
+.ld-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #888;
+  font-size: 13px;
+}
+
+.ld-overviewblock {
+  margin-bottom: 18px;
+}
+
+.ld-overviewtitle {
+  display: inline-block;
+  margin: 0 0 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  border-bottom: 2px solid #2ecc71;
+  padding-bottom: 2px;
+}
+
+.ld-overviewtext {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+  line-height: 1.65;
+}
+
+.ld-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.ld-feat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ld-iconring {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: #fff;
+}
+
+.ld-iconring--green {
+  background: #2ecc71;
+  border-color: #2ecc71;
+}
+
+.ld-featinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.ld-featlabel {
+  font-size: 12px;
+  color: #999;
+  line-height: 1;
+}
+
+.ld-featval {
+  font-size: 14px;
+  font-weight: 600;
+  color: #222;
+  line-height: 1;
+}
+
+.ld-featlabel--green {
+  color: #2ecc71;
+}
+
+.ld-featval--green {
+  color: #2ecc71;
+}

@@ -21,7 +21,7 @@ const BuyerReview = () => {
 
           {}
           <div className="buyer-card">
-            <img src={manReview}  />
+            <img  src={manReview}  />
             <div className="buyer-content">
               <p>
                 Lorem ipsum dolor sit amet dolor sit consectetur adipiscing elit.
@@ -34,7 +34,7 @@ const BuyerReview = () => {
 
           {}
           <div className="buyer-card">
-            <img src={womenReview} alt="Woman Review" />
+            <img  src={womenReview} alt="Woman Review" />
             <div className="buyer-content">
               <p>
                 Lorem ipsum dolor sit amet dolor sit consectetur adipiscing elit.

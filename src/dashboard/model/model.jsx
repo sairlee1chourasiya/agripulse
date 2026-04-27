@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../styles/screen/model/model.css";
 import closeIcon from "../../assets/dashboard/x-close.png";
 import lockIcon from "../../assets/dashboard/lock-01.png";
 
 const Model = ({ onClose }) => {
-  // Default code is 0000 for first 4 digits (rest empty)
+    const navigate = useNavigate();
+  
   const [code, setCode] = useState(["0", "0", "0", "0", "0", "0"]);
 
   const handleChange = (value, index) => {
@@ -69,7 +71,7 @@ const Model = ({ onClose }) => {
 
         <div className="modal-buttons">
           <button className="cancel-btn">Cancel</button>
-          <button className="confirm-btn">Confirm</button>
+          <button className="confirm-btn"  onClick={() => navigate("/dashboard")}>Confirm</button>
         </div>
       </div>
     </div>

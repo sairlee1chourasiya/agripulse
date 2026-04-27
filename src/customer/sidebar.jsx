@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from "../assets/dashboard/dashboard1/logo.png";
-import "../styles/screen/Dashboard1/sidebar.css";
+
 
 const Sidebar = () => {
   return (

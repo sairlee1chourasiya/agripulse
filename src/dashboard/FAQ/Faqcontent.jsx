@@ -1,75 +1,115 @@
-import React from "react";
-import { FaPlus } from "react-icons/fa";
-import Header from "./Header";
-import Sidebar from "./Sidebar";
-import Footer from "./Footer";
- 
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+import "../../styles/screen/FAQ/Faqcontent.css";
 
 
 
-const Faqcontent = () => {
+
+const faqData = [
+  {
+    id: 1,
+    question: "The expense windows adapted sir. Wrong widen drawn.",
+    answer:
+      "ANSWER.",
+  },
+  {
+    id: 2,
+    question: "Six curiosity day assurance bed necessary?",
+    answer:
+      " ANSWER.",
+  },
+  {
+    id: 3,
+    question: "Produce say the ten moments parties?",
+    answer:
+      "ANSWER.",
+  },
+  {
+    id: 4,
+    question: "Simple innate summer fat appear basket his desire joy?",
+    answer:
+      "ANSWER.",
+  },
+  {
+    id: 5,
+    question: "Outward clothes promise at gravity do excited?",
+    answer:
+      "ANSWER.",
+  },
+];
+
+export default function FaqContent() {
+   const navigate = useNavigate();
+  const [faqOpenId, setFaqOpenId] = useState(1);
+
+  const toggleFaq = (id) => {
+    setFaqOpenId((prev) => (prev === id ? null : id));
+  };
+
   return (
-    <section className="faq-page">
+    <div className="faqc-page-wrapper">
+      {/* Left sidebar space — 280px reserved */}
+      <div className="faqc-sidebar-space" />
 
-      <Header />
-      <Sidebar />
+      {/* Main content */}
+      <div className="faqc-main">
+        <h1 className="faqc-heading">
+          Frequently
+          <br />
+          asked questions
+        </h1>
 
-      <div className="main-content">
+        <div className="faqc-layout">
+          {/* Accordion */}
+          <div className="faqc-accordion">
+            {faqData.map((item) => {
+              const isOpen = faqOpenId === item.id;
+              return (
+                <div
+                  key={item.id}
+                  className={`faqc-item ${isOpen ? "faqc-item--open" : ""}`}
+                >
+                  <button
+                    className="faqc-trigger"
+                    onClick={() => toggleFaq(item.id)}
+                    aria-expanded={isOpen}
+                  >
+                    <span className="faqc-question">{item.question}</span>
+                    <span className="faqc-icon">{isOpen ? "−" : "+"}</span>
+                  </button>
 
-        <div className="faq-title">
-          <h1>Frequently asked questions</h1>
-        </div>
+                  {isOpen && (
+                    <div className="faqc-answer">
+                      <p>{item.answer}</p>
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
 
-        <div className="dropdowncontent">
-
-          <div className="faqbox">
-            <div className="faq-top">
-              <h3>The expense windows adapted sir. Wrong widen drawn.</h3>
-              <FaPlus className="plusicon" />
+          {/* Sidebar card */}
+          <aside className="faqc-card">
+            <div className="faqc-card-icon">
+              <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                <rect width="44" height="38" rx="4" fill="#3CB043"  />
+                <polygon points="8,38 8,44 16,38" fill="#3CB043" />
+              </svg>
             </div>
-
-            <p>
-              Offending belonging promotion provision an be oh consulted ourselves it.
-              Blessing welcomed ladyship she met humoured sir breeding her.
+            <h3 className="faqc-card-title">Do you have more questions?</h3>
+            <p className="faqc-card-desc">
+              End-to-end payments and financial management in a single solution.
+              Meet the right platform to help realize.
             </p>
-          </div>
-
-          <div className="faqbox">
-            <div className="faq-top">
-              <h3>Six curiosity day assurance bed necessary?</h3>
-              <FaPlus className="plusicon" />
-            </div>
-          </div>
-
-          <div className="faqbox">
-            <div className="faq-top">
-              <h3>Produce say the ten moments parties?</h3>
-              <FaPlus className="plusicon" />
-            </div>
-          </div>
-
-          <div className="faqbox">
-            <div className="faq-top">
-              <h3>Simple innate summer fat appear basket his desire joy?</h3>
-              <FaPlus className="plusicon" />
-            </div>
-          </div>
-
-          <div className="faqbox">
-            <div className="faq-top">
-              <h3>Outward clothes promise at gravity do excited?</h3>
-              <FaPlus className="plusicon" />
-            </div>
-          </div>
-
+            <button className="faqc-card-btn"  onClick={() => navigate("/SignupPage")}>Shoot a Direct Mail</button>
+          </aside>
         </div>
-
       </div>
 
-      <Footer />
-
-    </section>
+    
+    </div>
   );
-};
+}
 
-export default Faqcontent;
+

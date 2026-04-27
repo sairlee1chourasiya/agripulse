@@ -1,0 +1,12 @@
+.label{
+    margin-left: 60px;
+    margin-top: 20px;
+     background: #f3f3f3;
+}
+.range-container{
+    height: 150px;
+    margin-top: -20px;
+}
+.track{
+    margin-top: -20px;
+}
